@@ -193,6 +193,7 @@ CTR.SolariBoard = function( settings ) {
 
 		_display.className = 'display';
 		_segments.className = 'segments';
+		_display.id = _settings.id;
 		_display.style.fontSize = _settings.fontSize + 'px';
 
 		var w = 0;
@@ -207,14 +208,14 @@ CTR.SolariBoard = function( settings ) {
 				w += 4;
 			}
 		}
-		_segments.style.width = w + 60 + 'px';
-		_segments.style.height = _settings.segmentHeight + 60 + 'px';
+		_segments.style.width = w + 20 + 'px';
+		_segments.style.height = _settings.segmentHeight + 20 + 'px';
 		_display.style.width = w + 'px';
 		_display.style.height = _settings.segmentHeight + 'px';
-		_display.style.marginLeft = - .5 * ( w + 60 ) + 'px';
-		_display.style.marginTop = - .5 * _settings.segmentHeight + 'px';
-		_display.style.webkitPerspectiveOrigin = _display.style.MozPerspectiveOrigin = ( .5 * w ) +'px ' + _settings.segmentHeight + 'px';  
-		_display.style.webkitTransformOrigin = _display.style.MozTransformOrigin = ( .5 * w ) +'px ' + _settings.segmentHeight + 'px';  
+//		_display.style.marginLeft = - .5 * ( w + 60 ) + 'px';
+//		_display.style.marginTop = - .5 * _settings.segmentHeight + 'px';
+//		_display.style.webkitPerspectiveOrigin = _display.style.MozPerspectiveOrigin = ( .5 * w ) +'px ' + _settings.segmentHeight + 'px';  
+//		_display.style.webkitTransformOrigin = _display.style.MozTransformOrigin = ( .5 * w ) +'px ' + _settings.segmentHeight + 'px';  
 
 		_display.appendChild( _segments );
 		_settings.container.appendChild( _display );

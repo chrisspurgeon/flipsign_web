@@ -14,6 +14,14 @@
 			a { color: #ffffff; }
 			#viewport{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
 			#container{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; font-family: 'Oswald', sans-serif; }
+			#line1 {
+				left: 0;
+				top: 0;
+			}
+			#line2 {
+				left: 0;
+				top: 200px;
+			}
 		</style>
 	</head>
 	<body>
@@ -35,7 +43,13 @@
 
 			display1 = new CTR.SolariBoard( {
 				container: container,
+				id: "line1",
 				format: [
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
@@ -55,7 +69,13 @@
 
 			display2 = new CTR.SolariBoard( {
 				container: container,
+				id: "line2",
 				format: [
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
+					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
 					CTR.SOLARIVALUES.letter,
